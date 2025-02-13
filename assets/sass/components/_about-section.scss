@@ -1,0 +1,63 @@
+// About Section CSS
+.about-section {
+  .section-title {
+    margin-bottom: 20px;
+  }
+  .about-img {
+    .img-main {
+      max-width: 526px;
+      .about-shape {
+        right: -24px;
+        top: 24px;
+        animation: spin 26s infinite linear;
+      }
+    }
+    .clients {
+      background-color: white;
+      padding: 19px 30px;
+      bottom: 100px;
+      right: 15px;
+      gap: 20px;
+      .counter-info {
+        .number {
+          font-family: var(--font-Space);
+          font-size: 32px;
+          font-weight: 500;
+          line-height: 40px;
+          letter-spacing: -0.64px;
+          color: var(--black);
+        }
+      }
+    }
+    .box-icon {
+      img {
+        width: 46px;
+      }
+    }
+  }
+  .about-content {
+    .list-box {
+      .list-wrapper {
+        .list-info {
+          li {
+            text-wrap: nowrap;
+            margin-bottom: 10px;
+            color: var(--black);
+            font-family: var(--font-inter);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px; /* 155.556% */
+            letter-spacing: -0.36px;
+            i {
+              color: var(--tertiary);
+              margin-right: 15px;
+            }
+          }
+        }
+      }
+    }
+    .btn-arrow-fill {
+      fill: var(--black);
+    }
+  }
+}

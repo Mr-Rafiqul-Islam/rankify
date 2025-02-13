@@ -1,0 +1,132 @@
+/*
+  Theme Name: Rankify -SEO & Digital Marketing Agency Figma Template
+  Support: mr.rafiqulthedev@gmail.com
+  Description: Rankify -SEO & Digital Marketing Agency Figma Template
+  Version: 1.0
+*/
+
+/* CSS Index
+============================
+*** Template Components ***
+============================
+01. Variable CSS
+02. Common CSS
+    A. Utilities CSS
+    B. Button CSS
+    C. Section Title CSS
+    D. Icon Box CSS
+    E. Form Input CSS
+    F. Back To Top Btn CSS
+03. Header CSS
+04. Banner CSS
+05. Feature CSS
+06. Service CSS
+07. Counter CSS
+08. Team CSS
+09. Message CSS
+10. Newsletter CSS
+11. Testimonial CSS
+12. Project CSS
+13. Text Slider CSS
+14. Faq Section CSS
+15. Blog Section CSS
+16. Footer CSS
+
+*** Template Pages ***
+=========================
+
+============================
+*/
+
+/*=============================
+	1. Google Fonts
+===============================*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap");
+
+/*=============================
+	01. Variable CSS start
+===============================*/
+
+:root {
+  --black: #02050A;
+  --black2: #111111;
+  --primary: #00DF8D;
+  --secondary: #FFDF6E;
+  --tertiary: #D197FF;
+  --btn-color: #0D6EFD;
+  --btn-color2: #FAC43A;
+  --blue: #3F5AF3;
+  --special-heading: #160932;
+  --paragraph-color: #5F6980;
+  --bg-one: #FEFBF3;
+  --bg-two: #0f144b;
+  --bg-three: #F6EAFF;
+  --font-inter: "Inter", sans-serif;
+  --font-size: 18px;
+  --font-weight: 400;
+  --transition: all linear 0.3s;
+  --body-background: #ffffff;
+  --border-color: #FAC43A; 
+  --rgba-black: rgba(237, 242, 247, 0.05);
+  --rgba-border: rgba(2, 5, 10, 0.20);
+  --linear-gradient: linear-gradient(180deg, rgba(0, 223, 141, 0.21) 0%, rgba(255, 223, 110, 0.35) 100%);
+  --shadow: 0px 16px 52px 0px rgba(0, 0, 0, 0.07);
+}
+
+/*=============================
+	02. Common CSS start
+===============================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+button {
+  display: inline-block;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-inter);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  color: var(--paragraph-color);
+  line-height: 150%;
+  background: var(--body-background);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: var(--black);
+}
+p {
+  color: var(--paragraph-color);
+  letter-spacing: -0.36px;
+}

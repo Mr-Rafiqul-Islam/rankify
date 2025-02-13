@@ -1,0 +1,68 @@
+/*=============================
+	05. Feature CSS start
+===============================*/
+.feature-section {
+  .feature-img {
+    padding-left: 8px;
+    @media screen and (max-width: 1199.98px) {
+      padding-left: 0;
+    }
+    .img-main {
+      max-width: 482px;
+      padding-left: 35px;
+      z-index: 1;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 413px;
+        height: 230px;
+        background: var(--tertiary);
+        border-radius: 20px;
+        bottom: -32px;
+        left: 0;
+        z-index: -1;
+      }
+    }
+    .img-child {
+      max-width: 331px;
+      border: 14px solid white;
+      background: white;
+      z-index: 2;
+      right: 0;
+      bottom: -80px;
+    }
+  }
+  .feature-content {
+    padding-left: 53px;
+    padding-top: 13px;
+    @media screen and (max-width: 1199.98px) {
+      padding-left: 0;
+      padding-top: 0;
+    }
+    .title {
+      margin-bottom: 60px;
+      @media (max-width: 1199.98px) {
+        margin-bottom: 24px;
+      }
+    }
+    .feature-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      li {
+        gap: 30px;
+        .feature-info {
+          .feature-title {
+            margin-bottom: 10px;
+            font-size: 22px;
+            line-height: 36px;
+          }
+          .desc {
+            line-height: 28px;
+            max-width: 450px;
+          }
+        }
+      }
+    }
+  }
+}

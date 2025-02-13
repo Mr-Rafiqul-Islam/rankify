@@ -1,0 +1,49 @@
+/*=============================
+	A. Utilities CSS Start
+===============================*/
+
+// custom selection
+::selection {
+  background: var(--tertiary);
+  color: white;
+}
+// custom bg
+.section-bg {
+  background: var(--bg-one);
+}
+// custom padding class
+.py-120 {
+  padding: 120px 0;
+  @media screen and (max-width: 767.98px) {
+    padding: 100px 0;
+  }
+}
+.pt-120 {
+  padding-top: 120px;
+  @media screen and (max-width: 767.98px) {
+    padding-top: 100px;
+  }
+}
+// custom radius
+.rounded-20 {
+  border-radius: 20px !important;
+}
+.rounded-30 {
+  border-radius: 30px !important;
+}
+// custom margin
+.mb-40 {
+  margin-bottom: 40px !important;
+}
+.mb-60 {
+  margin-bottom: 60px !important;
+}
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+.mt-30 {
+  margin-top: 30px !important;
+}
+.mb-20 {
+  margin-bottom: 20px !important;
+}
