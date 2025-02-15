@@ -525,34 +525,24 @@ p {
 ===============================*/
 .header-section {
   position: fixed;
-  top: 20px;
+  top: 0;
   left: 0;
   z-index: 999;
   width: 100%;
+  background: var(--bg-one);
 }
 
 .navbar {
   padding: 0;
 }
 
-.navbar-main {
-  max-width: 1296px;
-  background: var(--bg-one);
-  padding: 8px 50px;
-  border-radius: 80px;
-}
-@media (max-width: 1399.98px) {
-  .navbar-main {
-    max-width: 1116px;
-    padding: 8px 30px;
-  }
-}
 .navbar-main .navbar-brand {
   padding: 0;
 }
 .navbar-main .navbar-collapse .navbar-nav {
   padding: 0;
   gap: 25px;
+  margin-left: 99px;
 }
 .navbar-main .navbar-collapse .navbar-nav .nav-item {
   padding: 0;
@@ -610,6 +600,12 @@ p {
   visibility: visible;
   opacity: 1;
   margin-top: 0px;
+}
+
+.bar-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--primary);
 }
 
 .call-to-action {
