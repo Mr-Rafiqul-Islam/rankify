@@ -3,14 +3,28 @@
 ===============================*/
 .header-section {
   position: fixed;
-  top:0;
+  top: 0;
   left: 0;
   z-index: 999;
   width: 100%;
   background: var(--bg-one);
 }
+.header-top {
+  padding-top: 20px;
+}
+.social-media {
+  ul {
+    gap: 25px;
+    li {
+      a {
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
+  }
+}
 .navbar {
   padding: 0;
+  padding-bottom: 20px;
 }
 .navbar-main {
   .navbar-brand {
@@ -19,7 +33,7 @@
   .navbar-collapse {
     .navbar-nav {
       padding: 0;
-      gap: 25px;
+      gap: 24px;
       margin-left: 99px;
       .nav-item {
         padding: 0;
@@ -27,8 +41,9 @@
         .nav-link {
           padding: 0;
           color: var(--black);
-          font-family: var(--font-space);
-          line-height: 78px;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 22px;
           display: flex;
           align-items: center;
           gap: 5px;
@@ -58,7 +73,9 @@
               background-color: transparent;
               width: 100%;
               padding: 8px 16px;
-              font-weight: 500;
+              font-size: 14px;
+              font-weight: 600;
+              line-height: 22px;
               transition: var(--transition);
               &:hover {
                 background-color: var(--primary);
@@ -78,29 +95,28 @@
     }
   }
 }
-.bar-icon{
+.bar-icon {
   width: 50px;
   height: 50px;
   background: var(--primary);
 }
 .call-to-action {
-  gap: 15px;
+  gap: 20px;
   .icon {
-    width: 55px;
-    height: 55px;
-    background: white;
+    width: 30px;
+    height: 30px;
+    background: #f6f2ea;
     display: grid;
     place-items: center;
-    color: var(--primary);
+    color: black;
+    font-size: 13px;
     transition: var(--transition);
   }
   .info {
-    p {
-      letter-spacing: -0.36px;
-    }
     h6 {
-      line-height: 30px;
-      font-size: 18px;
+      color: #535353;
+      font-size: 16px;
+      line-height: 24px; /* 150% */
     }
   }
   &:hover {
@@ -119,19 +135,18 @@
       .help {
         margin-bottom: 2px;
       }
-      .number{
+      .number {
         transition: var(--transition);
       }
     }
     &:hover {
       .info {
-        .number{
-           color: var(--tertiary);
+        .number {
+          color: var(--tertiary);
         }
       }
     }
   }
-
 }
 #header-fixed-height.active-height {
   display: block;
@@ -172,12 +187,11 @@
   }
 }
 
-
 /* =======header section two====== */
 .header-section-two {
   background: var(--bg-one);
   z-index: 999;
-  &::before{
+  &::before {
     content: "";
     position: absolute;
     top: 0;
@@ -210,7 +224,7 @@
     background: transparent;
     border-radius: 0;
     padding: 11px 0;
-    .navbar-brand{
+    .navbar-brand {
       margin-right: 0;
     }
   }
