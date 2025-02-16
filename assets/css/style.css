@@ -196,26 +196,25 @@ p {
 	B. Button CSS Start
 ===============================*/
 .theme-btn {
-  padding: 15px 30px;
+  padding: 14px 50px;
   border-radius: 999px;
-  font-family: var(--font-Space);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 27px;
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
-.theme-btn .btn-arrow {
+.theme-btn .btn-arrow, .theme-btn i {
   margin-left: 10px;
 }
-.theme-btn .btn-arrow .btn-arrow-fill {
+.theme-btn .btn-arrow .btn-arrow-fill, .theme-btn i .btn-arrow-fill {
   fill: white;
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 
 .theme-btn-primary {
-  background: var(--primary);
+  background: var(--btn-color);
   border: 1px solid var(--primary);
   color: white;
   position: relative;
@@ -944,7 +943,7 @@ p {
 ===============================*/
 .banner-section {
   background: white;
-  padding: 117px 0 17.83px 0;
+  padding: 212px 0 81px 0;
 }
 @media screen and (max-width: 991.98px) {
   .banner-section .banner-content {
@@ -952,24 +951,18 @@ p {
   }
 }
 .banner-section .banner-content .banner-title {
-  max-width: 541px;
-  font-size: 74px;
-  line-height: 84px;
-  letter-spacing: -1.48px;
+  color: var(--black);
+  font-size: 84px;
+  line-height: 92px; /* 109.524% */
+  letter-spacing: -5px;
+}
+.banner-section .banner-content .banner-title span {
+  color: var(--blue);
 }
 @media screen and (max-width: 991.98px) {
   .banner-section .banner-content .banner-title {
     margin: 0 auto;
     text-align: center !important;
-  }
-}
-.banner-section .banner-content .banner-title .title-shape {
-  right: 80px;
-  top: -20px;
-}
-@media (max-width: 1199.98px) {
-  .banner-section .banner-content .banner-title .title-shape {
-    right: 8px;
   }
 }
 @media (max-width: 1199.98px) {
@@ -980,9 +973,9 @@ p {
 }
 .banner-section .banner-content .banner-info {
   letter-spacing: -0.36px;
-  margin-top: 29px;
-  margin-bottom: 39px;
-  max-width: 463px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  max-width: 620px;
 }
 @media screen and (max-width: 991.98px) {
   .banner-section .banner-content .banner-info {
@@ -991,7 +984,7 @@ p {
   }
 }
 .banner-section .banner-content .banner-btn {
-  gap: 50px;
+  gap: 30px;
 }
 @media screen and (max-width: 991.98px) {
   .banner-section .banner-content .banner-btn {
@@ -1001,26 +994,22 @@ p {
     margin-top: 15px;
   }
 }
-.banner-section .banner-content .banner-btn .play-btn {
-  gap: 10px;
-  line-height: 28px;
-  letter-spacing: -0.36px;
-  color: var(--paragraph-color);
+.banner-section .banner-content .banner-btn .partner-numbers {
+  gap: 19px;
 }
-.banner-section .banner-content .banner-btn .play-btn .icon {
-  display: -ms-grid;
-  display: grid;
-  place-content: center;
+.banner-section .banner-content .banner-btn .partner-numbers .partners-img img + img {
+  margin-left: -15px;
+}
+.banner-section .banner-content .banner-btn .partner-numbers .partners-img span {
+  margin-left: -15px;
   width: 50px;
   height: 50px;
-  background: var(--secondary);
-  color: var(--tertiary);
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-}
-.banner-section .banner-content .banner-btn .play-btn:hover .icon {
-  background: var(--bg-three);
-  color: #ffffff;
+  border: 1px solid #F6F2EA;
+  background: white;
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21;
 }
 .banner-section .custom-shadow {
   width: 431px;

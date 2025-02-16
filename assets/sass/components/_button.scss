@@ -4,24 +4,23 @@
 
 // Theme btn css
 .theme-btn {
-    padding: 15px 30px;
+    padding: 14px 50px;
     border-radius: 999px;
-    font-family: var(--font-Space);
-    font-weight: 700;
+    font-weight: 600;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 27px;
     transition: var(--transition);
-    .btn-arrow {
+    .btn-arrow,i {
       margin-left: 10px;
       .btn-arrow-fill {
         fill: white;
         transition: var(--transition);
-      }
+      } 
     }
   }
   
   .theme-btn-primary {
-    background: var(--primary);
+    background: var(--btn-color);
     border: 1px solid var(--primary);
     color: white;
     position: relative;
