@@ -1,63 +1,74 @@
 // About Section CSS
 .about-section {
+  width: 100%;
+  padding: 20px;
+  .about-main-section {
+    border-radius: 15px;
+    padding-top: 120px;
+    padding-bottom: 140px;
+    background: var(--linear-gradient);
+  }
   .section-title {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .about-img {
-    .img-main {
-      max-width: 526px;
-      .about-shape {
-        right: -24px;
-        top: 24px;
-        animation: spin 26s infinite linear;
+    padding-right: 32px;
+    .img-box {
+      width: 100%;
+      height: 550px;
+      border-radius: 45px;
+      background: rgba(255, 255, 255, 0.4);
+      padding-left: 27px;
+      .main-img {
+        bottom: 0;
       }
-    }
-    .clients {
-      background-color: white;
-      padding: 19px 30px;
-      bottom: 100px;
-      right: 15px;
-      gap: 20px;
-      .counter-info {
-        .number {
-          font-family: var(--font-Space);
-          font-size: 32px;
-          font-weight: 500;
-          line-height: 40px;
-          letter-spacing: -0.64px;
-          color: var(--black);
+      .project-status-box {
+        bottom: 19px;
+        right: 20px;
+        padding: 0 40px 30px 40px;
+        border-radius: 37px;
+        background: #fff;
+        .project-status {
+          position: relative;
+          margin-bottom: 10px;
+          h6 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: #2b2b5e;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 54.9px; /* 183% */
+            letter-spacing: -0.8px;
+          }
         }
-      }
-    }
-    .box-icon {
-      img {
-        width: 46px;
+        h5 {
+          font-size: 22px;
+          line-height: 27px; /* 122.727% */
+          margin-bottom: 8px;
+        }
       }
     }
   }
   .about-content {
-    .list-box {
-      .list-wrapper {
-        .list-info {
-          li {
-            text-wrap: nowrap;
-            margin-bottom: 10px;
-            color: var(--black);
-            font-family: var(--font-inter);
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 28px; /* 155.556% */
-            letter-spacing: -0.36px;
-            i {
-              color: var(--tertiary);
-              margin-right: 15px;
-            }
-          }
-        }
+    .about-desc {
+      margin-bottom: 30px;
+      line-height: 27px; /* 150% */
+    }
+    ul {
+      li + li {
+        margin-top: 22px;
+      }
+      li {
+        color: var(--black2);
+        font-size: 16px;
+        line-height: 24px; /* 150% */
+        gap: 10px;
       }
     }
-    .btn-arrow-fill {
-      fill: var(--black);
+    .theme-btn {
+      margin-top: 40px;
     }
   }
 }
