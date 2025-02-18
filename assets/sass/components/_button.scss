@@ -25,6 +25,13 @@
     color: white;
     position: relative;
     z-index: 9;
+    &.style2{
+      background: var(--black) !important;
+      &::before{
+        background: var(--btn-color) !important;
+      }
+      
+    }
     &::before{
       position:absolute;
       width: 100%;

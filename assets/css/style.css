@@ -220,6 +220,12 @@ p {
   position: relative;
   z-index: 9;
 }
+.theme-btn-primary.style2 {
+  background: var(--black) !important;
+}
+.theme-btn-primary.style2::before {
+  background: var(--btn-color) !important;
+}
 .theme-btn-primary::before {
   position: absolute;
   width: 100%;
