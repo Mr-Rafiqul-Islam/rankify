@@ -6,82 +6,106 @@
   .section-title {
     margin-bottom: 60px;
   }
-  .team-items {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
+  .team-members {
+    padding: 0 15px;
     .team-card {
-      border: 1px solid var(--border-color);
-      padding: 50px 40px;
+      border-radius: 15px;
       transition: var(--transition);
-      .info {
-        h4 {
-          margin-bottom: 10px;
-          font-size: 22px;
-          line-height: 36px;
+      &:hover {
+        .img-part {
+          .share-icon {
+            background: var(--blue);
+            i {
+              color: white !important;
+            }
+          }
+        }
+        .social-icons {
+          bottom: 43px;
+          visibility: visible;
+          opacity: 1;
         }
       }
-      .hover-img {
-        top: 50%;
-        transform: translateY(-50%) rotate(-15deg);
-        right: 78px;
-        max-width: 300px;
-        visibility: hidden;
-        opacity: 0;
-        z-index: 9;
-        transition: var(--transition);
-      }
-      &:hover {
-        background: white;
-        .social-icons {
-          a {
-            background: white;
+      .img-part {
+        width: 100%;
+        padding: 7px 16px 0 16px;
+        border-radius: 15px;
+        background: rgba(63, 90, 243, 0.1);
+        .share-icon {
+          width: 45px;
+          height: 45px;
+          background: #f3f6f8;
+          transition: var(--transition);
+          z-index: 99;
+          i {
             color: var(--black);
           }
         }
-        .hover-img {
-          visibility: visible;
-          opacity: 1;
+      }
+      .details-part {
+        margin-top: 42px;
+        text-align: center;
+        .name {
+          color: var(--black);
+          font-size: 24px;
+          line-height: 34px; /* 141.667% */
+          letter-spacing: -0.6px;
+        }
+        .designation {
+          font-size: 16px;
+          line-height: 24px;
         }
       }
-      &.active-team {
-        background: white;
-        .hover-img {
-          visibility: visible;
-          opacity: 1;
+      .social-icons {
+        background: var(--blue);
+        border-radius: 999px;
+        padding: 15px 8px;
+        transition: var(--transition);
+        bottom: -200px;
+        visibility: hidden;
+        opacity: 0;
+        ul {
+          row-gap: 15px;
+          li {
+            a {
+              text-align: center;
+              color: white;
+              font-size: 16px;
+            }
+          }
         }
       }
     }
   }
-  .social-icons {
-    position: relative;
-    z-index: 99;
-  }
-  .team-btn {
-    margin-top: 80px;
-    .btn-arrow-fill {
-      fill: var(--black);
-    }
-  }
-}
-.social-icons {
-  gap: 10px;
-  a {
-    color: var(--black);
-    width: 35px;
-    height: 35px;
-    border: 1px solid var(--border-color);
-    display: grid;
-    place-content: center;
-    font-size: 14px;
-    transition: var(--transition);
-    border-radius: 5px;
-    &:hover {
-      color: white !important;
-      background: var(--tertiary) !important;
-    }
+  .slogan {
+    color: var(--special-heading);
+    text-align: center;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 59.4px; /* 110% */
+    letter-spacing: -1.5px;
+    margin-top: 36px;
+    max-width: 1000px;
   }
 }
+// .social-icons {
+//   gap: 10px;
+//   a {
+//     color: var(--black);
+//     width: 35px;
+//     height: 35px;
+//     border: 1px solid var(--border-color);
+//     display: grid;
+//     place-content: center;
+//     font-size: 14px;
+//     transition: var(--transition);
+//     border-radius: 5px;
+//     &:hover {
+//       color: white !important;
+//       background: var(--tertiary) !important;
+//     }
+//   }
+// }
 
 // team-section-two start
 .team-section-two {
@@ -93,12 +117,12 @@
   }
   .all-team-card {
     .team-card {
-      &:hover{
-        .overlay{
+      &:hover {
+        .overlay {
           visibility: visible;
           opacity: 1;
-          .social-icons{
-            a{
+          .social-icons {
+            a {
               opacity: 1;
               transform: translateY(0);
             }
@@ -135,16 +159,16 @@
             transform: translateY(15px);
             transition: var(--transition);
             background: white;
-            &:first-child{
+            &:first-child {
               transition-delay: 0.2s;
             }
-            &:nth-child(2){
+            &:nth-child(2) {
               transition-delay: 0.3s;
             }
-            &:nth-child(3){
+            &:nth-child(3) {
               transition-delay: 0.4s;
             }
-            &:nth-child(4){
+            &:nth-child(4) {
               transition-delay: 0.5s;
             }
             &:hover {
