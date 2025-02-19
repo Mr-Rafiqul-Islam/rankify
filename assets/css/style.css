@@ -18,18 +18,16 @@
     F. Back To Top Btn CSS
 03. Header CSS
 04. Banner CSS
-05. Feature CSS
-06. Service CSS
-07. Counter CSS
+05. Service CSS
+06. About CSS
+07. Feature CSS
 08. Team CSS
-09. Message CSS
-10. Newsletter CSS
-11. Testimonial CSS
-12. Project CSS
-13. Text Slider CSS
-14. Faq Section CSS
-15. Blog Section CSS
-16. Footer CSS
+09. Partner CSS
+10. Testimonial CSS
+11. Faq Section CSS
+12. Blog Section CSS
+13. Newsletter CSS 
+14. Footer CSS 
 
 *** Template Pages ***
 =========================
@@ -1106,97 +1104,7 @@ p {
   }
 }
 /*=============================
-	05. Feature CSS start
-===============================*/
-.feature-section {
-  padding: 0 20px;
-}
-.feature-section .feature-main-section {
-  background: var(--black);
-  border-radius: 15px;
-}
-.feature-section .fact-part {
-  padding-top: 16px;
-  border-radius: 15px;
-  background: #0e1016;
-}
-.feature-section .fact-part .fact-content {
-  padding-left: 60px;
-}
-.feature-section .fact-part .fact-content .fact-desc {
-  margin-top: 20px;
-}
-.feature-section .fact-part .fact-img {
-  padding-right: 30px;
-}
-.feature-section .feature-cards .feature-card {
-  border-radius: 20px;
-  padding: 40px 30px 40px 40px;
-}
-.feature-section .feature-cards .feature-card h3 {
-  color: rgba(2, 5, 10, 0.2);
-  font-size: 36px;
-  line-height: 36px; /* 100% */
-}
-.feature-section .feature-cards .feature-card h4 {
-  color: #090d26;
-  font-size: 28px;
-  line-height: 28px; /* 100% */
-  margin: 30px 0;
-}
-.feature-section .feature-cards .feature-card .card-desc {
-  color: black;
-  font-size: 20px;
-  line-height: 29px; /* 145% */
-}
-.feature-section .feature-cards .feature-card.primary {
-  background: var(--primary);
-}
-.feature-section .feature-cards .feature-card.secondary {
-  background: var(--secondary);
-}
-.feature-section .feature-cards .feature-card.tertiary {
-  background: var(--tertiary);
-}
-.feature-section .feature-part {
-  margin-top: 120px;
-}
-.feature-section .feature-part .feature-content .section-title {
-  margin-bottom: 20px;
-}
-.feature-section .feature-part .feature-content .theme-btn {
-  margin-top: 40px;
-}
-.feature-section .feature-part .feature-counter .counter-box {
-  width: 300px;
-  height: 300px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  text-align: center;
-  padding: 62px 58px;
-  border-radius: 15px;
-  border: 1px solid var(--btn-color2);
-  background: var(--rgba-black);
-}
-.feature-section .feature-part .feature-counter .counter-box.ml-n {
-  margin-left: -24px !important;
-}
-.feature-section .feature-part .feature-counter .counter-box .count {
-  color: white;
-  font-size: 54px;
-  line-height: 59.4px; /* 110% */
-  letter-spacing: -1.5px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-.feature-section .feature-part .feature-counter .counter-box .counter-title {
-  color: white;
-  font-size: 22px;
-  line-height: 27px; /* 122.727% */
-}
-
-/*=============================
-	06. Service CSS start
+	05. Service CSS start
 ===============================*/
 .service-section {
   padding: 0 20px;
@@ -1348,143 +1256,169 @@ p {
 }
 
 /*=============================
-	07. Counter CSS start
+	06. About CSS start
 ===============================*/
-.counter-section .section-title {
-  max-width: 1126px;
-  margin-bottom: 40px;
-}
-.counter-section .section-title .title {
-  font-size: 74px;
-  line-height: 84px;
-}
-.counter-section .counter-area .counter-desc {
-  margin-bottom: 68px;
-}
-.counter-section .counter-area .counter-part .counter-item {
-  background: white;
-  border-radius: 20px;
-  display: -ms-grid;
-  display: grid;
-  place-content: center;
-  padding: 40px 0;
+.about-section {
   width: 100%;
-  text-align: center;
+  padding: 20px;
 }
-.counter-section .counter-area .counter-part .counter-item .counter-number {
-  font-size: 60px;
-  line-height: 68px;
-  text-align: center;
-  letter-spacing: -1.48px;
-  margin-bottom: 5px;
+.about-section .about-main-section {
+  border-radius: 15px;
+  padding-top: 120px;
+  padding-bottom: 140px;
+  background: var(--linear-gradient);
 }
-.counter-section .img-area {
-  padding-left: 50px;
+.about-section .section-title {
+  margin-bottom: 30px;
 }
-
-.counter-section-two {
-  padding: 120px 80px 0;
+.about-section .about-img {
+  padding-right: 32px;
 }
-.counter-section-two .counter-main {
-  background-color: var(--secondary);
-  padding: 120px 0 424px 0;
+.about-section .about-img .img-box {
+  width: 100%;
+  height: 550px;
+  border-radius: 45px;
+  background: rgba(255, 255, 255, 0.4);
+  padding-left: 27px;
 }
-.counter-section-two .counter-main .bg-img {
-  opacity: 0.1;
+.about-section .about-img .img-box .main-img {
+  bottom: 0;
 }
-.counter-section-two .counter-main .counter-item-two .number {
-  font-family: var(--font-Space);
-  color: var(--black);
-  font-size: 60px;
+.about-section .about-img .img-box .project-status-box {
+  bottom: 19px;
+  right: 20px;
+  padding: 0 40px 30px 40px;
+  border-radius: 37px;
+  background: #fff;
+}
+.about-section .about-img .img-box .project-status-box .project-status {
+  position: relative;
+  margin-bottom: 10px;
+}
+.about-section .about-img .img-box .project-status-box .project-status h6 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #2b2b5e;
+  font-size: 30px;
   font-weight: 700;
-  line-height: 68px;
-  letter-spacing: -1.48px;
-  margin-bottom: 5px;
+  line-height: 54.9px; /* 183% */
+  letter-spacing: -0.8px;
 }
-.counter-section-two .counter-main .counter-item-two .short-info {
-  color: var(--paragraph-color);
+.about-section .about-img .img-box .project-status-box h5 {
+  font-size: 22px;
+  line-height: 27px; /* 122.727% */
+  margin-bottom: 8px;
 }
-
-/*
-@media (max-width: 1399.98px) {
-  .ep-counter-section {
-    .counter-text {
-      .counter-wrapper {
-        .counter-item {
-          padding: 32px 20px;
-
-          .number {
-            font-size: 52px;
-          }
-        }
-      }
-    }
-  }
-
-  .counter-section-two {
-    padding: 120px 20px 0;
-  }
+.about-section .about-content .about-desc {
+  margin-bottom: 30px;
+  line-height: 27px; /* 150% */
+}
+.about-section .about-content ul li + li {
+  margin-top: 22px;
+}
+.about-section .about-content ul li {
+  color: var(--black2);
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+  gap: 10px;
+}
+.about-section .about-content .theme-btn {
+  margin-top: 40px;
 }
 
-@media (max-width: 1199.98px) {
-  .ep-counter-section {
-    .counter-text {
-      p {
-        margin-bottom: 40px;
-      }
-    }
-  }
+/*=============================
+	07. Feature CSS start
+===============================*/
+.feature-section {
+  padding: 0 20px;
+}
+.feature-section .feature-main-section {
+  background: var(--black);
+  border-radius: 15px;
+}
+.feature-section .fact-part {
+  padding-top: 16px;
+  border-radius: 15px;
+  background: #0e1016;
+}
+.feature-section .fact-part .fact-content {
+  padding-left: 60px;
+}
+.feature-section .fact-part .fact-content .fact-desc {
+  margin-top: 20px;
+}
+.feature-section .fact-part .fact-img {
+  padding-right: 30px;
+}
+.feature-section .feature-cards .feature-card {
+  border-radius: 20px;
+  padding: 40px 30px 40px 40px;
+}
+.feature-section .feature-cards .feature-card h3 {
+  color: rgba(2, 5, 10, 0.2);
+  font-size: 36px;
+  line-height: 36px; /* 100% */
+}
+.feature-section .feature-cards .feature-card h4 {
+  color: #090d26;
+  font-size: 28px;
+  line-height: 28px; /* 100% */
+  margin: 30px 0;
+}
+.feature-section .feature-cards .feature-card .card-desc {
+  color: black;
+  font-size: 20px;
+  line-height: 29px; /* 145% */
+}
+.feature-section .feature-cards .feature-card.primary {
+  background: var(--primary);
+}
+.feature-section .feature-cards .feature-card.secondary {
+  background: var(--secondary);
+}
+.feature-section .feature-cards .feature-card.tertiary {
+  background: var(--tertiary);
+}
+.feature-section .feature-part {
+  margin-top: 120px;
+}
+.feature-section .feature-part .feature-content .section-title {
+  margin-bottom: 20px;
+}
+.feature-section .feature-part .feature-content .theme-btn {
+  margin-top: 40px;
+}
+.feature-section .feature-part .feature-counter .counter-box {
+  width: 300px;
+  height: 300px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  text-align: center;
+  padding: 62px 58px;
+  border-radius: 15px;
+  border: 1px solid var(--btn-color2);
+  background: var(--rgba-black);
+}
+.feature-section .feature-part .feature-counter .counter-box.ml-n {
+  margin-left: -24px !important;
+}
+.feature-section .feature-part .feature-counter .counter-box .count {
+  color: white;
+  font-size: 54px;
+  line-height: 59.4px; /* 110% */
+  letter-spacing: -1.5px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.feature-section .feature-part .feature-counter .counter-box .counter-title {
+  color: white;
+  font-size: 22px;
+  line-height: 27px; /* 122.727% */
 }
 
-@media (max-width: 991.98px) {
-  .ep-counter-section {
-    .counter-image {
-      max-width: 100%;
-    }
-  }
-}
-
-@media (max-width: 767.98px) {
-  .counter-section-two {
-    .counter-main {
-      padding: 100px 0 390px 0;
-    }
-  }
-}
-
-@media (max-width: 575.98px) {
-  .counter-section {
-    .heading-style1 {
-      font-size: 36px;
-      line-height: 48px;
-    }
-
-    .section-title-block, .counter-text {
-      text-align: center;
-    }
-  }
-
-  .counter-section-two {
-    padding: 100px 12px 0;
-
-    .counter-main {
-      padding: 60px 0 360px 0 !important;
-
-      .counter-item-two {
-        .number {
-          font-size: 45px;
-          line-height: 68px;
-        }
-
-        .short-info {
-          color: var(--bs-paragraph-color);
-          font-size: 16px;
-        }
-      }
-    }
-  }
-}
-*/
 /*=============================
 	08. Team CSS start
 ===============================*/
@@ -1646,652 +1580,153 @@ p {
 }
 
 /*=============================
-	01. Message CSS start
+	09. Service CSS start
 ===============================*/
-.message-section {
-  padding-bottom: 92px;
+.partner-section {
+  padding: 56px 0;
+  background: var(--primary);
 }
-.message-section::before {
-  width: 1600px;
-  height: 100%;
-  background-color: white !important;
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-}
-@media (max-width: 1399.98px) {
-  .message-section::before {
-    width: 1100px;
-  }
-}
-.message-section .section-title {
+
+/*=============================
+	07. Counter CSS start
+===============================*/
+.counter-section .section-title {
+  max-width: 1126px;
   margin-bottom: 40px;
-  position: relative;
 }
-.message-section .message-image {
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  max-width: 915px;
-  height: 854px;
+.counter-section .section-title .title {
+  font-size: 74px;
+  line-height: 84px;
 }
-.message-section .message-image img {
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  height: 100%;
+.counter-section .counter-area .counter-desc {
+  margin-bottom: 68px;
 }
-@media (max-width: 1399.98px) {
-  .message-section .message-image {
-    max-width: 585px;
-  }
-}
-
-.message-section-two {
-  padding-bottom: 120px;
-}
-.message-section-two::before {
-  display: none;
-}
-.message-section-two .message-main {
-  background-color: white;
-  padding: 80px 60px;
-}
-.message-section-two .message-main .message-form .input-group .form-field {
-  background-color: var(--bg-one);
-  border-radius: 30px !important;
-}
-.message-section-two .message-main .message-form .input-group .textarea-control {
-  height: 150px;
-}
-.message-section-two .message-main .message-contact-info {
-  padding: 80px 40px;
-  background-color: var(--tertiary);
-  height: 100%;
-}
-.message-section-two .message-main .message-contact-info .contact-info li {
-  gap: 15px;
-}
-.message-section-two .message-main .message-contact-info .contact-info li .icon {
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: white;
-}
-.message-section-two .message-main .message-contact-info .contact-info .cn-title {
-  color: white;
-  opacity: 0.8;
-  margin-bottom: 2px;
-}
-.message-section-two .message-main .message-contact-info .contact-info .cn-info {
-  color: white;
-  opacity: 0.8;
-}
-.message-section-two .message-main .message-contact-info .contact-info .cn-info a {
-  color: white;
-  opacity: 0.8;
-}
-.message-section-two .message-main .message-contact-info .contact-info .cn-info a:hover {
-  opacity: 1;
-}
-.message-section-two .message-main .message-contact-info .contact-info li + li {
-  margin-top: 58px;
-}
-.message-section-two.style2 {
-  padding-bottom: 0;
-}
-.message-section-two.style2 .message-main {
-  border: 1px solid var(--border-color);
-}
-
-/*=============================
-   10. Newsletter Section CSS Start
-===============================*/
-.newsletter-section {
-  background-color: var(--secondary);
-  padding: 80px 0;
-  background-repeat: no-repeat;
-  background-position: top left;
-}
-.newsletter-section .news-text .info {
-  max-width: 270px;
-  color: var(--black);
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 40px;
-  letter-spacing: -0.64px;
-}
-.newsletter-section .news-form .input-group .form-field {
-  background-color: transparent;
-  border-color: var(--black);
-  height: 60px;
-}
-.newsletter-section .news-form .input-group .form-field:focus {
-  border-color: var(--primary);
-}
-.newsletter-section .news-form .input-group .mail-icon {
-  font-size: 14px;
-  right: 28px;
-}
-.newsletter-section .news-form .theme-btn-primary {
-  background-color: var(--tertiary) !important;
-  border-color: var(--tertiary) !important;
-}
-
-.newsletter-section-two {
-  background: var(--tertiary);
-  padding: 144px 0 137px 0;
-}
-.newsletter-section-two .title {
-  font-size: 60px;
-  line-height: 68px; /* 113.333% */
-  letter-spacing: -1.48px;
-  margin-bottom: 16px;
-}
-.newsletter-section-two p {
-  font-family: var(--font-inter);
-  font-size: 18px;
-  line-height: 28px;
-  margin-bottom: 46px;
-}
-.newsletter-section-two .action-btn {
-  gap: 45px;
-}
-
-/*=============================
-	11. Testimonial CSS start
-===============================*/
-.testimonial-section .section-title {
-  margin-bottom: 20px;
-}
-.testimonial-section .testimonial-info {
-  padding-right: 40px;
-}
-.testimonial-section .testimonial-info .call-us {
-  margin-top: 39px;
-}
-.testimonial-section .testimonial-area .testimonial-item {
-  padding: 40px 50px 35px 40px;
-  min-height: 382px;
-  height: 100%;
-}
-.testimonial-section .testimonial-area .testimonial-item .details {
-  margin-bottom: 20px;
-}
-.testimonial-section .testimonial-area .testimonial-item .details p {
-  color: var(--paragraph-color);
-  font-family: var(--font-inter);
-  font-size: 21px;
-  font-weight: 400;
-  line-height: 31px;
-  letter-spacing: -0.36px;
-}
-.testimonial-section .user-info {
-  margin-top: auto;
-}
-.testimonial-section .user-info .user {
-  gap: 20px;
-}
-.testimonial-section .user-info .img {
-  width: 70px;
-  height: 70px;
-}
-.testimonial-section .user-info .text .name {
-  color: var(--black);
-  font-size: 22px;
-  line-height: 36px;
-  margin-bottom: 4px;
-}
-.testimonial-section .rating {
-  margin-bottom: 30px;
-}
-.testimonial-section .rating i {
-  font-size: 20px;
-  color: var(--secondary);
-}
-.testimonial-section .rating .no-rate {
-  color: var(--border-color);
-}
-
-.testimonial-section-two {
-  margin-top: -305px;
-}
-.testimonial-section-two .testimonial-main {
-  padding: 30px 60px 30px 30px;
-  background-color: white;
-}
-.testimonial-section-two .testimonial-main .image {
-  max-width: 343px;
-}
-.testimonial-section-two .testimonial-main .testimonial-two-slider {
-  padding-top: 34px;
-  padding-left: 60px;
-  min-height: 518px;
-}
-.testimonial-section-two .testimonial-main .testimonial-two-slider .slider-item .info {
-  margin-bottom: 30px;
-  margin-top: 40px;
-}
-.testimonial-section-two .testimonial-main .testimonial-two-slider .slider-item .info p {
-  font-family: var(--font-Space);
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 50px;
-  letter-spacing: -0.36px;
-}
-.testimonial-section-two .testimonial-main .testimonial-two-slider .slider-item .rating {
-  margin-top: 140px;
-  margin-bottom: 0;
-}
-.testimonial-section-two .testimonial-main .slick-dots {
-  list-style-type: none;
-  position: absolute;
-  bottom: 0px;
-  right: 0;
-}
-.testimonial-section-two .testimonial-main .slick-dots li {
-  display: inline-block;
-  margin-left: 12px;
-  line-height: 0;
-}
-.testimonial-section-two .testimonial-main .slick-dots li button {
-  font-size: 0;
-  width: 7px;
-  height: 7px;
-  background-color: var(--border-color);
-  border-radius: 50%;
-  border: 0;
-  position: relative;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-}
-.testimonial-section-two .testimonial-main .slick-dots li button::before {
-  width: 19px;
-  height: 19px;
-  border: 1px solid transparent;
-  border-radius: 50%;
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-}
-.testimonial-section-two .testimonial-main .slick-dots .slick-active button {
-  background-color: var(--primary);
-}
-.testimonial-section-two .testimonial-main .slick-dots .slick-active button::before {
-  border-color: var(--primary);
-}
-
-/*=============================
-	12. Project CSS start
-===============================*/
-.project-section .project-item .overlay {
-  bottom: -20px;
-  left: 0;
-  width: 100%;
-  padding: 30px;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-}
-.project-section .project-item .overlay p {
-  color: white;
-  background-color: var(--tertiary);
-  border-radius: 20px 20px 0 0;
-  padding: 4px 30px;
-  display: inline-block;
-}
-.project-section .project-item .overlay .title {
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 36px;
-  background-color: white;
-  border-radius: 0 20px 20px 20px;
-  padding: 17px 30px;
-}
-.project-section .project-item .overlay .title a {
-  color: var(--black);
-}
-.project-section .project-item .overlay .title a:hover {
-  color: var(--primary);
-}
-.project-section .project-item:hover .overlay {
-  visibility: visible;
-  opacity: 1;
-  bottom: 0;
-}
-.project-section .project-item + .project-item {
-  margin-top: 30px;
-}
-
-.project-section-two .project-main .project-item {
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-}
-.project-section-two .project-main .project-item:hover .overlay {
-  visibility: visible;
-  opacity: 1;
-  bottom: 0;
-}
-.project-section-two .project-main .project-item .overlay {
-  bottom: -20px;
-  visibility: hidden;
-  opacity: 0;
-  padding: 20px;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-}
-.project-section-two .project-main .project-item .overlay .project-info {
-  background: var(--rgba-blue);
-}
-.project-section-two .project-main .project-item .overlay .project-info .project-title {
-  text-align: center;
-  font-size: 22px;
-  line-height: 36px; /* 163.636% */
-  margin-bottom: 10px;
-}
-.project-section-two .project-main .project-item .overlay .project-info p {
-  text-align: center;
-  font-family: var(--font-inter);
-  line-height: 28px; /* 155.556% */
-}
-.project-section-two .project-main .project-item .overlay .project-info .box-icon {
-  margin-top: 65px;
-  width: 73px !important;
-  height: 73px !important;
-  color: var(--black);
-  font-size: 24px;
-}
-.project-section-two .project-main .project-item .overlay .project-info .box-icon:hover {
+.counter-section .counter-area .counter-part .counter-item {
   background: white;
+  border-radius: 20px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  padding: 40px 0;
+  width: 100%;
+  text-align: center;
 }
-
-/*=============================
-	13. Text Slider CSS start
-===============================*/
-.text-slider-section .slider-main {
-  border-top: 2px solid var(--tertiary);
-  border-bottom: 2px solid var(--tertiary);
-  padding: 30px 0;
-  gap: 40px;
-}
-.text-slider-section .slider-main .slider-item {
-  white-space: nowrap;
-  -webkit-animation: scroll2 18s linear infinite;
-          animation: scroll2 18s linear infinite;
-  gap: 40px;
-}
-.text-slider-section .slider-main .slider-item .title {
-  color: var(--black);
+.counter-section .counter-area .counter-part .counter-item .counter-number {
   font-size: 60px;
-  font-weight: 300;
   line-height: 68px;
+  text-align: center;
   letter-spacing: -1.48px;
+  margin-bottom: 5px;
 }
-.text-slider-section .slider-main .slider-item .title img {
-  margin-right: 22px;
-}
-.text-slider-section .slider-main .slider-item .title:nth-child(even) {
-  opacity: 0.7;
-}
-.text-slider-section .slider-main:hover .slider-item {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-}
-
-@-webkit-keyframes scroll2 {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  to {
-    -webkit-transform: translateX(calc(-100% - 2.6rem));
-            transform: translateX(calc(-100% - 2.6rem));
-  }
-}
-
-@keyframes scroll2 {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  to {
-    -webkit-transform: translateX(calc(-100% - 2.6rem));
-            transform: translateX(calc(-100% - 2.6rem));
-  }
-}
-/*=============================
-	14. Faq Section CSS start
-===============================*/
-.faq-section .faq-body .accordion-button {
-  color: var(--black);
-  font-size: var(--font-size);
-  font-weight: 700;
-  line-height: 30px;
-  border-radius: 120px !important;
-  padding: 23px 30px;
-}
-.faq-section .faq-body .accordion-button:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-.faq-section .faq-body .accordion-button::after {
-  background-image: url(../images/icon/plus-solid.svg);
-  -webkit-transition: none;
-  transition: none;
-  background-position: 0 0;
-}
-.faq-section .faq-body .accordion-button:not(.collapsed)::after {
-  background-image: url(../images/icon/dash-lg.svg);
-  background-position: 0 8px;
-}
-.faq-section .faq-body .accordion-button:not(.collapsed) {
-  background-color: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-.faq-section .faq-body .accordion-item {
-  border: 0;
-  margin: 10px 0;
-  background-color: var(--body-background);
-  border-radius: 30px;
-}
-.faq-section .faq-body .accordion-item + .accordion-item {
-  margin-top: 30px;
-}
-.faq-section .faq-body .accordion-body {
-  padding: 0 30px 30px 30px;
-}
-.faq-section .faq-images {
+.counter-section .img-area {
   padding-left: 50px;
 }
-.faq-section .faq-images .clients {
-  height: 100%;
-  background-color: var(--secondary);
-  padding: 20px;
+
+.counter-section-two {
+  padding: 120px 80px 0;
 }
-.faq-section .faq-images .clients .client-number {
-  color: var(--black);
+.counter-section-two .counter-main {
+  background-color: var(--secondary);
+  padding: 120px 0 424px 0;
+}
+.counter-section-two .counter-main .bg-img {
+  opacity: 0.1;
+}
+.counter-section-two .counter-main .counter-item-two .number {
   font-family: var(--font-Space);
+  color: var(--black);
   font-size: 60px;
   font-weight: 700;
   line-height: 68px;
   letter-spacing: -1.48px;
+  margin-bottom: 5px;
 }
-.faq-section .faq-images .clients .client-number .odometer {
-  font-weight: 700;
-}
-.faq-section .faq-images .clients .trust {
-  color: var(--black);
-  font-family: var(--font-Space);
-  font-size: var(--font-size);
-  font-weight: 300;
-  line-height: 30px;
-  margin-top: 5px;
-}
-
-/*=============================
-    15. Blog Section CSS Start
-===============================*/
-.blog-section .blog-item {
-  background-color: var(--body-background);
-  -webkit-box-shadow: var(--shadow);
-          box-shadow: var(--shadow);
-}
-.blog-section .blog-item .img {
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-}
-.blog-section .blog-item .img img {
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.blog-section .blog-item .text {
-  padding: 20px 40px 40px 40px;
-}
-.blog-section .blog-item .text .blog-title {
-  margin-bottom: 10px;
-}
-.blog-section .blog-item .text .blog-title a {
-  color: var(--black);
-}
-.blog-section .blog-item .text .blog-title a:hover {
-  color: var(--primary);
-}
-.blog-section .blog-item .text p {
-  margin-bottom: 30px;
-}
-.blog-section .blog-item .text .btn-arrow-fill {
-  fill: var(--black);
-}
-.blog-section .blog-item:hover .img img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-.blog-section .blog-meta {
-  margin-bottom: 20px;
-}
-.blog-section .blog-meta a {
+.counter-section-two .counter-main .counter-item-two .short-info {
   color: var(--paragraph-color);
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: 28px;
-  letter-spacing: -0.36px;
-}
-.blog-section .blog-meta a i {
-  color: var(--primary);
-  font-size: 14px;
-  margin-right: 10px;
-}
-.blog-section .blog-meta.style2 {
-  margin-bottom: 30px;
-  white-space: nowrap;
-  bottom: 0;
-  border-radius: 5px;
-  gap: 40px;
-  padding: 5px 20px;
-}
-.blog-section .blog-meta.style2 .date {
-  color: var(--black);
-  font-size: var(--font-size);
-  font-weight: 700;
-  line-height: 30px;
-}
-.blog-section .blog-meta.style2 .date span {
-  padding-left: 10px;
-  color: var(--paragraph-color);
-  font-size: 14px;
-  font-weight: var(--font-weight);
-  line-height: 18px;
-  letter-spacing: -0.36px;
-  position: relative;
-  top: -2px;
-}
-.blog-section .blog-meta.style2 .admin {
-  color: var(--black);
-  font-size: 14px;
-  font-weight: var(--font-weight);
-  line-height: 20px;
-  letter-spacing: -0.36px;
-  position: relative;
-}
-.blog-section .blog-meta.style2 .admin::before {
-  position: absolute;
-  width: 1px;
-  height: 20px;
-  background-color: var(--secondary);
-  top: 0;
-  left: -20px;
-  content: "";
 }
 
-.blog-section-two .blog-item {
-  margin: 0 15px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-.blog-section-two .blog-item .img {
-  border-top-right-radius: 30px !important;
-  border-top-left-radius: 30px !important;
-}
-.blog-section-two .blog-item .img img {
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.blog-section-two .blog-item .blog-title {
-  margin-bottom: 30px !important;
-}
-.blog-section-two .arrows {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: var(--tertiary);
-  background: rgba(71, 177, 106, 0.1);
-  cursor: pointer;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-  position: absolute;
-  top: -123px;
-  left: calc(100% - 75px);
-  z-index: 9;
-  margin-top: 0;
-}
-.blog-section-two .arrows:hover {
-  background: var(--tertiary);
-  color: white;
-}
-.blog-section-two .arrow-prev {
-  margin-left: -80px;
+/*
+@media (max-width: 1399.98px) {
+  .ep-counter-section {
+    .counter-text {
+      .counter-wrapper {
+        .counter-item {
+          padding: 32px 20px;
+
+          .number {
+            font-size: 52px;
+          }
+        }
+      }
+    }
+  }
+
+  .counter-section-two {
+    padding: 120px 20px 0;
+  }
 }
 
+@media (max-width: 1199.98px) {
+  .ep-counter-section {
+    .counter-text {
+      p {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .ep-counter-section {
+    .counter-image {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .counter-section-two {
+    .counter-main {
+      padding: 100px 0 390px 0;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .counter-section {
+    .heading-style1 {
+      font-size: 36px;
+      line-height: 48px;
+    }
+
+    .section-title-block, .counter-text {
+      text-align: center;
+    }
+  }
+
+  .counter-section-two {
+    padding: 100px 12px 0;
+
+    .counter-main {
+      padding: 60px 0 360px 0 !important;
+
+      .counter-item-two {
+        .number {
+          font-size: 45px;
+          line-height: 68px;
+        }
+
+        .short-info {
+          color: var(--bs-paragraph-color);
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+*/
 /*=============================
-	16. Footer CSS Start
+	14. Footer CSS Start
 ===============================*/
 .footer-section {
   padding-bottom: 30px;
@@ -2541,193 +1976,4 @@ p {
 }
 .footer-section-two .footer-bg .footer-bottom {
   border-color: var(--black);
-}
-
-.about-section {
-  width: 100%;
-  padding: 20px;
-}
-.about-section .about-main-section {
-  border-radius: 15px;
-  padding-top: 120px;
-  padding-bottom: 140px;
-  background: var(--linear-gradient);
-}
-.about-section .section-title {
-  margin-bottom: 30px;
-}
-.about-section .about-img {
-  padding-right: 32px;
-}
-.about-section .about-img .img-box {
-  width: 100%;
-  height: 550px;
-  border-radius: 45px;
-  background: rgba(255, 255, 255, 0.4);
-  padding-left: 27px;
-}
-.about-section .about-img .img-box .main-img {
-  bottom: 0;
-}
-.about-section .about-img .img-box .project-status-box {
-  bottom: 19px;
-  right: 20px;
-  padding: 0 40px 30px 40px;
-  border-radius: 37px;
-  background: #fff;
-}
-.about-section .about-img .img-box .project-status-box .project-status {
-  position: relative;
-  margin-bottom: 10px;
-}
-.about-section .about-img .img-box .project-status-box .project-status h6 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #2b2b5e;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 54.9px; /* 183% */
-  letter-spacing: -0.8px;
-}
-.about-section .about-img .img-box .project-status-box h5 {
-  font-size: 22px;
-  line-height: 27px; /* 122.727% */
-  margin-bottom: 8px;
-}
-.about-section .about-content .about-desc {
-  margin-bottom: 30px;
-  line-height: 27px; /* 150% */
-}
-.about-section .about-content ul li + li {
-  margin-top: 22px;
-}
-.about-section .about-content ul li {
-  color: var(--black2);
-  font-size: 16px;
-  line-height: 24px; /* 150% */
-  gap: 10px;
-}
-.about-section .about-content .theme-btn {
-  margin-top: 40px;
-}
-
-.who-section .content-area .desc {
-  margin-bottom: 20px;
-  max-width: 490px;
-}
-@media (max-width: 1199.98px) {
-  .who-section .content-area .desc {
-    max-width: 100%;
-  }
-}
-.who-section .img-area {
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
-.who-section .img-area .conter-part {
-  background: var(--secondary);
-  padding: 38px;
-}
-.who-section .img-area .conter-part .count {
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 68px; /* 113.333% */
-  letter-spacing: -1.48px;
-}
-.who-section .img-area .conter-part h6 {
-  font-size: 18px;
-  line-height: 30px; /* 166.667% */
-}
-.who-section .img-area .conter-part .icon-box {
-  background: var(--tertiary);
-}
-.who-section .img-area .img-part img {
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-}
-
-.icon-box {
-  width: 120px;
-  height: 120px;
-}
-
-/*
-========================
- Pricing Section Started
- ========================
- */
-.pricing-section .main-pricing {
-  --bs-gutter-x: 30px;
-  --bs-gutter-y: 30px;
-}
-.pricing-section .main-pricing .pricing-card {
-  padding: 40px;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-  border: 1px solid transparent;
-}
-.pricing-section .main-pricing .pricing-card:hover {
-  border-color: var(--tertiary);
-}
-.pricing-section .main-pricing .pricing-card .upper-content {
-  margin-bottom: 40px;
-  gap: 34px;
-}
-.pricing-section .main-pricing .pricing-card .upper-content .title {
-  margin-bottom: 20px;
-  font-size: 32px;
-  font-weight: 500 !important;
-  line-height: 40px; /* 125% */
-  letter-spacing: -0.64px;
-  text-wrap: nowrap;
-}
-.pricing-section .main-pricing .pricing-card .upper-content .price {
-  font-size: 60px;
-  line-height: 68px; /* 113.333% */
-  letter-spacing: -1.48px;
-}
-.pricing-section .main-pricing .pricing-card .upper-content .icon-box {
-  width: 100px !important;
-  height: 100px !important;
-  background: rgba(71, 177, 106, 0.1);
-}
-.pricing-section .main-pricing .pricing-card .lower-content ul {
-  margin-bottom: 40px;
-}
-.pricing-section .main-pricing .pricing-card .lower-content ul li + li {
-  margin-top: 15px;
-}
-.pricing-section .main-pricing .pricing-card .lower-content ul li {
-  gap: 14px;
-  font-family: var(--font-inter);
-  line-height: 28px; /* 155.556% */
-  letter-spacing: -0.36px;
-}
-.pricing-section .main-pricing .pricing-card .lower-content ul li i {
-  font-size: 14px;
-  font-weight: 400;
-  color: var(--tertiary);
-  line-height: 28px;
-}
-.pricing-section .main-pricing .pricing-card .lower-content button {
-  color: var(--black);
-  font-family: "Space Grotesk";
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 30px; /* 166.667% */
-  border-radius: 999px;
-  padding: 10px 30px;
-  border: 1px solid var(--border-color);
-  gap: 10px;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-  background: white;
-}
-.pricing-section .main-pricing .pricing-card .lower-content button:hover {
-  background: var(--primary);
-  color: white;
 }

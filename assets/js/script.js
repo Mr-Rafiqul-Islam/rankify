@@ -188,9 +188,7 @@
     autoplay: true,
   });
 
-  // Team move and active js
-  var team_item = gsap.utils.toArray(".team-card");
-  let hover_img = gsap.utils.toArray(".hover-img");
+
 
   // Function to move the service image on mouse move
   function ServiceImageMove(event, item) {
@@ -206,29 +204,7 @@
     });
   }
 
-  // Add hover effect only for screens larger than 768px
-  if (window.innerWidth > 767) {
-    team_item.forEach((item, i) => {
-      item.addEventListener("mousemove", (event) => {
-        ServiceImageMove(event, item);
-      });
-
-      item.addEventListener("mouseleave", () => {
-        hover_img.forEach((img) => {
-          gsap.to(img, {
-            x: 0,
-            y: 0,
-          });
-        });
-      });
-    });
-
-    // Add active team class on hover
-    $(".team-card").hover(function () {
-      $(".team-card").removeClass("active-team");
-      $(this).addClass("active-team");
-    });
-  }
+ 
   // Back to top js
   let btn = $(".scroll-to-top");
 
