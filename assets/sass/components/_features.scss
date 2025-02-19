@@ -2,65 +2,88 @@
 	05. Feature CSS start
 ===============================*/
 .feature-section {
-  .feature-img {
-    padding-left: 8px;
-    @media screen and (max-width: 1199.98px) {
-      padding-left: 0;
-    }
-    .img-main {
-      max-width: 482px;
-      padding-left: 35px;
-      z-index: 1;
-      &::before {
-        position: absolute;
-        content: "";
-        width: 413px;
-        height: 230px;
-        background: var(--tertiary);
-        border-radius: 20px;
-        bottom: -32px;
-        left: 0;
-        z-index: -1;
+  padding: 0 20px;
+  .feature-main-section {
+    background: var(--black);
+    border-radius: 15px;
+  }
+  .fact-part {
+    padding-top: 16px;
+    border-radius: 15px;
+    background: #0e1016;
+    .fact-content {
+      padding-left: 60px;
+      .fact-desc {
+        margin-top: 20px;
       }
     }
-    .img-child {
-      max-width: 331px;
-      border: 14px solid white;
-      background: white;
-      z-index: 2;
-      right: 0;
-      bottom: -80px;
+    .fact-img {
+      padding-right: 30px;
     }
   }
-  .feature-content {
-    padding-left: 53px;
-    padding-top: 13px;
-    @media screen and (max-width: 1199.98px) {
-      padding-left: 0;
-      padding-top: 0;
-    }
-    .title {
-      margin-bottom: 60px;
-      @media (max-width: 1199.98px) {
-        margin-bottom: 24px;
+  .feature-cards {
+    .feature-card {
+      border-radius: 20px;
+      padding: 40px 30px 40px 40px;
+      h3 {
+        color: rgba(2, 5, 10, 0.2);
+        font-size: 36px;
+        line-height: 36px; /* 100% */
+      }
+      h4 {
+        color: #090d26;
+        font-size: 28px;
+        line-height: 28px; /* 100% */
+        margin: 30px 0;
+      }
+      .card-desc {
+        color: black;
+        font-size: 20px;
+        line-height: 29px; /* 145% */
+      }
+      &.primary {
+        background: var(--primary);
+      }
+      &.secondary {
+        background: var(--secondary);
+      }
+      &.tertiary {
+        background: var(--tertiary);
       }
     }
-    .feature-list {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      li {
-        gap: 30px;
-        .feature-info {
-          .feature-title {
-            margin-bottom: 10px;
-            font-size: 22px;
-            line-height: 36px;
-          }
-          .desc {
-            line-height: 28px;
-            max-width: 450px;
-          }
+  }
+  .feature-part {
+    margin-top: 120px;
+    .feature-content {
+      .section-title {
+        margin-bottom: 20px;
+      }
+      .theme-btn {
+        margin-top: 40px;
+      }
+    }
+    .feature-counter {
+      .counter-box {
+        &.ml-n{
+          margin-left: -24px !important;
+        }
+        text-align: center;
+        padding: 62px 58px;
+        border-radius: 15px;
+        border: 1px solid var(--btn-color2);
+        background: var(--rgba-black);
+        .count {
+          color: white;
+          font-size: 54px;
+          line-height: 59.4px; /* 110% */
+          letter-spacing: -1.5px;
+          margin-top: 30px;
+          margin-bottom: 10px;
+        }
+        .counter-title {
+          color: white;
+          font-size: 22px;
+          line-height: 27px; /* 122.727% */
         }
       }
     }

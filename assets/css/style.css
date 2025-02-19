@@ -269,7 +269,6 @@ p {
   transition: var(--transition);
 }
 .theme-btn-tertiary:hover {
-  color: white;
   border-color: var(--tertiary);
 }
 .theme-btn-tertiary:hover::before {
@@ -354,6 +353,13 @@ p {
 /*=============================
 	C. Section Title CSS Start
 ===============================*/
+.section-title.style2 .sub-title {
+  color: white !important;
+  border-color: white !important;
+}
+.section-title.style2 .title {
+  color: white !important;
+}
 .section-title .sub-title {
   font-size: 14px;
   line-height: 22px;
@@ -562,7 +568,7 @@ p {
   gap: 5px;
 }
 .navbar-main .navbar-collapse .navbar-nav .nav-item .nav-link i {
-  font-size: 18px;
+  font-size: 14px;
 }
 .navbar-main .navbar-collapse .navbar-nav .nav-item .nav-link.active {
   color: var(--primary);
@@ -1102,77 +1108,87 @@ p {
 /*=============================
 	05. Feature CSS start
 ===============================*/
-.feature-section .feature-img {
-  padding-left: 8px;
+.feature-section {
+  padding: 0 20px;
 }
-@media screen and (max-width: 1199.98px) {
-  .feature-section .feature-img {
-    padding-left: 0;
-  }
+.feature-section .feature-main-section {
+  background: var(--black);
+  border-radius: 15px;
 }
-.feature-section .feature-img .img-main {
-  max-width: 482px;
-  padding-left: 35px;
-  z-index: 1;
+.feature-section .fact-part {
+  padding-top: 16px;
+  border-radius: 15px;
+  background: #0e1016;
 }
-.feature-section .feature-img .img-main::before {
-  position: absolute;
-  content: "";
-  width: 413px;
-  height: 230px;
-  background: var(--tertiary);
+.feature-section .fact-part .fact-content {
+  padding-left: 60px;
+}
+.feature-section .fact-part .fact-content .fact-desc {
+  margin-top: 20px;
+}
+.feature-section .fact-part .fact-img {
+  padding-right: 30px;
+}
+.feature-section .feature-cards .feature-card {
   border-radius: 20px;
-  bottom: -32px;
-  left: 0;
-  z-index: -1;
+  padding: 40px 30px 40px 40px;
 }
-.feature-section .feature-img .img-child {
-  max-width: 331px;
-  border: 14px solid white;
-  background: white;
-  z-index: 2;
-  right: 0;
-  bottom: -80px;
+.feature-section .feature-cards .feature-card h3 {
+  color: rgba(2, 5, 10, 0.2);
+  font-size: 36px;
+  line-height: 36px; /* 100% */
 }
-.feature-section .feature-content {
-  padding-left: 53px;
-  padding-top: 13px;
+.feature-section .feature-cards .feature-card h4 {
+  color: #090d26;
+  font-size: 28px;
+  line-height: 28px; /* 100% */
+  margin: 30px 0;
 }
-@media screen and (max-width: 1199.98px) {
-  .feature-section .feature-content {
-    padding-left: 0;
-    padding-top: 0;
-  }
+.feature-section .feature-cards .feature-card .card-desc {
+  color: black;
+  font-size: 20px;
+  line-height: 29px; /* 145% */
 }
-.feature-section .feature-content .title {
-  margin-bottom: 60px;
+.feature-section .feature-cards .feature-card.primary {
+  background: var(--primary);
 }
-@media (max-width: 1199.98px) {
-  .feature-section .feature-content .title {
-    margin-bottom: 24px;
-  }
+.feature-section .feature-cards .feature-card.secondary {
+  background: var(--secondary);
 }
-.feature-section .feature-content .feature-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 30px;
+.feature-section .feature-cards .feature-card.tertiary {
+  background: var(--tertiary);
 }
-.feature-section .feature-content .feature-list li {
-  gap: 30px;
+.feature-section .feature-part {
+  margin-top: 120px;
 }
-.feature-section .feature-content .feature-list li .feature-info .feature-title {
+.feature-section .feature-part .feature-content .section-title {
+  margin-bottom: 20px;
+}
+.feature-section .feature-part .feature-content .theme-btn {
+  margin-top: 40px;
+}
+.feature-section .feature-part .feature-counter .counter-box {
+  text-align: center;
+  padding: 62px 58px;
+  border-radius: 15px;
+  border: 1px solid var(--btn-color2);
+  background: var(--rgba-black);
+}
+.feature-section .feature-part .feature-counter .counter-box.ml-n {
+  margin-left: -24px !important;
+}
+.feature-section .feature-part .feature-counter .counter-box .count {
+  color: white;
+  font-size: 54px;
+  line-height: 59.4px; /* 110% */
+  letter-spacing: -1.5px;
+  margin-top: 30px;
   margin-bottom: 10px;
-  font-size: 22px;
-  line-height: 36px;
 }
-.feature-section .feature-content .feature-list li .feature-info .desc {
-  line-height: 28px;
-  max-width: 450px;
+.feature-section .feature-part .feature-counter .counter-box .counter-title {
+  color: white;
+  font-size: 22px;
+  line-height: 27px; /* 122.727% */
 }
 
 /*=============================
