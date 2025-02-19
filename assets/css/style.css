@@ -1607,7 +1607,7 @@ p {
   color: black;
   -webkit-transition: var(--transition);
   transition: var(--transition);
-  bottom: -32px;
+  bottom: -62px;
   left: 0;
   position: absolute;
   cursor: pointer;
@@ -1634,6 +1634,7 @@ p {
   color: var(--black2) !important;
   line-height: 38px; /* 135.714% */
   letter-spacing: -0.6px;
+  max-width: 675px;
 }
 .testimonial-section .testimonial-slider .testimonial-card .title {
   color: var(--black2);

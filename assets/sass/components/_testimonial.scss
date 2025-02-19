@@ -17,7 +17,7 @@
       font-size: 17px;
       color: black;
       transition: var(--transition);
-      bottom: -32px;
+      bottom: -62px;
       left: 0;
       position: absolute;
       cursor: pointer;
@@ -43,6 +43,7 @@
         color: var(--black2) !important;
         line-height: 38px; /* 135.714% */
         letter-spacing: -0.6px;
+        max-width: 675px;
       }
       .title {
         color: var(--black2);
