@@ -1590,6 +1590,34 @@ p {
 /*=============================
 	10. Testimonial CSS start
 ===============================*/
+.testimonial-section .section-title {
+  margin-bottom: -108px !important;
+}
+.testimonial-section .testimonial-slider .arrow {
+  width: 60px;
+  height: 60px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 100px;
+  background: rgba(255, 224, 110, 0.3);
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  font-size: 17px;
+  color: black;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  bottom: -32px;
+  left: 0;
+  position: absolute;
+  cursor: pointer;
+}
+.testimonial-section .testimonial-slider .arrow.arrow-next {
+  left: 70px !important;
+}
+.testimonial-section .testimonial-slider .arrow:hover {
+  background: var(--secondary);
+}
 .testimonial-section .testimonial-slider .slider-item {
   padding-top: 148px;
   padding-bottom: 32px;

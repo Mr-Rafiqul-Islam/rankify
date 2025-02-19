@@ -184,7 +184,9 @@
     speed: 800,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
+    prevArrow: '<i class="fa-solid arrow arrow-prev fa-arrow-left"></i>',
+    nextArrow: '<i class="fa-solid arrow arrow-next fa-arrow-right"></i>',
     autoplay: true,
   });
 
