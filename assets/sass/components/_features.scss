@@ -64,9 +64,12 @@
     }
     .feature-counter {
       .counter-box {
-        &.ml-n{
+        &.ml-n {
           margin-left: -24px !important;
         }
+        width: 300px;
+        height: 300px;
+        flex-shrink: 0;
         text-align: center;
         padding: 62px 58px;
         border-radius: 15px;
