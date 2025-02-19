@@ -1588,6 +1588,45 @@ p {
 }
 
 /*=============================
+	10. Testimonial CSS start
+===============================*/
+.testimonial-section .testimonial-slider .slider-item {
+  padding-top: 148px;
+  padding-bottom: 32px;
+}
+.testimonial-section .testimonial-slider .testimonial-card {
+  padding: 60px;
+  border-radius: 15px;
+  background: var(--bg-one);
+  max-width: 850px;
+}
+.testimonial-section .testimonial-slider .testimonial-card .desc {
+  margin: 31px 0;
+  font-size: 28px;
+  color: var(--black2) !important;
+  line-height: 38px; /* 135.714% */
+  letter-spacing: -0.6px;
+}
+.testimonial-section .testimonial-slider .testimonial-card .title {
+  color: var(--black2);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 27px; /* 112.5% */
+  margin-bottom: 10px;
+}
+.testimonial-section .testimonial-slider .testimonial-card .designation {
+  color: var(--black2);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px; /* 150% */
+}
+.testimonial-section .testimonial-slider .testimonial-card .main-img {
+  top: 0;
+  right: 0;
+  max-width: 556px;
+}
+
+/*=============================
 	07. Counter CSS start
 ===============================*/
 .counter-section .section-title {
